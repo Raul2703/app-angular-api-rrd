@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{ film()?.title }}</h5>
+        <p class="card-text">Director: {{ film()?.director }}</p>
+        <p class="card-text">Producer: {{ film()?.producer }}</p>
+        <p class="card-text">Release date: {{ film()?.release_date }}</p>
+        <a class="btn btn-primary" [routerLink]="['/film-detail', getFilmId()]">Ver detalle</a>
+    </div>
+</div>

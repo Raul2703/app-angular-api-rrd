@@ -1,0 +1,13 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{ vehicleDetail?.name }}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+</div>
+<div class="modal-body">
+    <p>Model: {{ vehicleDetail?.model }}</p>
+    <p>Manufacturer: {{ vehicleDetail?.manufacturer }}</p>
+    <p>Crew: {{ vehicleDetail?.crew }}</p>
+    <p>Passengers: {{ vehicleDetail?.passengers }}</p>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="activeModal.close()">Close</button>
+</div>

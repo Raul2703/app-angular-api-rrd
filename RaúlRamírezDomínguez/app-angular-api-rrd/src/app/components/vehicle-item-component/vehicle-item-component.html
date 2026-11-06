@@ -1,0 +1,8 @@
+<div class="card" (click)="emitVehicleClicked()">
+    <div class="card-body">
+        <h5 class="card-title">{{ vehicle()?.name }}</h5>
+        <p class="card-text">Model: {{ vehicle()?.model }}</p>
+        <p class="card-text">Manufacturer: {{ vehicle()?.manufacturer }}</p>
+        <p class="card-text">Class: {{ vehicle()?.vehicle_class }}</p>
+    </div>
+</div>

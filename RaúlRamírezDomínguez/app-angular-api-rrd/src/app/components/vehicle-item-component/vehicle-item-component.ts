@@ -1,0 +1,18 @@
+import { Component, input, output } from '@angular/core';
+import { Vehicle } from '../../interfaces/vehicle-list-response';
+
+@Component({
+  imports: [],
+  selector: 'app-vehicle-item-component',
+  styleUrl: './vehicle-item-component.css',
+  templateUrl: './vehicle-item-component.html',
+})
+export class VehicleItemComponent {
+  vehicle = input<Vehicle>();
+  vehicleClicked = output<string>();
+
+  emitVehicleClicked() {
+    const id = this.vehicle()?.url.split('/')[5]!;
+    this.vehicleClicked.emit(id);
+  }
+}
